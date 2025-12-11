@@ -16,7 +16,7 @@ class ExactOracleSolver:
         print(f"    [Oracle] Solving Exact K-Adaptability (K={self.K})... This may take a while.")
         # 给 Oracle 充足的时间 (300s)，确保生成高质量数据
         solver = KAdaptabilitySolver(self.ins, K=self.K)
-        obj, x_sol = solver.solve(time_limit=300)
+        obj, x_sol = solver.solve(time_limit=3000)
         
         if x_sol is not None:
             return np.array(x_sol)
