@@ -61,7 +61,7 @@
 ### 🌐 方向二：泛化升级——跨实例学习 (Cross-Instance Generalization)
 **目标**：从 `One-Instance-One-Tree` 进化为 `One-Model-Many-Instances`，训练一个通用的“划分预测器”。
 
-* **核心挑战**：不同实例的参数（$c, r, B$）不同，简单的 $\xi$ 输入无法泛化。
+* **核心挑战**：不同实例的参数（$ c, r, B $）不同，简单的 $\xi$ 输入无法泛化。
 * **解决方案：特征工程 (Feature Engineering)**
     * 设计**上下文特征 (Contextual Features)**，例如：
         * **松弛度 (Slackness)**：当前 $\xi$ 距离预算违约还有多远？
